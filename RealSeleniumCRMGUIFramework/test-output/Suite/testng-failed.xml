@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner_Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.comcast.crm.tsetng.organizationtest.OrganizationTest1">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="CreateOrganizationWithPhonenoTest"/>
+          <include name="CreateOrganizationWithIndustryDDTest"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="CreateOrganizationTest"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="CreateOrganizationAndDeleteOrganizationTest"/>
+        </methods>
+      </class> <!-- com.comcast.crm.tsetng.organizationtest.OrganizationTest1 -->
+    </classes>
+  </test> <!-- TestRunner_Edge(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner_Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.comcast.crm.testngassert.contacttest.ContactTest1">
+        <methods>
+          <include name="createContactWithSupportDateTest"/>
+          <include name="configAM"/>
+          <include name="createContactTest"/>
+          <include name="configBM"/>
+          <include name="createContactWithOrganizationTest"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+        </methods>
+      </class> <!-- com.comcast.crm.testngassert.contacttest.ContactTest1 -->
+    </classes>
+  </test> <!-- TestRunner_Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
