@@ -23,6 +23,8 @@ public class CreateContactTest {
 		 FileUtility flib=new FileUtility();
 		 ExcelUtility elib=new ExcelUtility();
 		 JavaUtility jlib=new JavaUtility();
+
+		System.out.println("ABC");
 		
 		
 		String browser=flib.getDataFromPropertiesFile("browser");
